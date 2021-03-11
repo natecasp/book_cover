@@ -1,0 +1,166 @@
+
+.container {
+	height:100vh;
+	width:100vw;
+	background: #ff5b42;
+}
+.book {
+	height:600px;
+	width: 387px;
+	background: #2c3137;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+.the {
+	width: 70px;
+	height: auto;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top:8%;
+}
+.hobbit {
+	width:300px;
+	height:auto;
+	left:50%;
+	position: absolute;
+	top:20%;
+	transform:translate(-50%,-50%);
+}
+.tolkein {
+	width: 330px;
+	height: auto;
+	left:50%;
+	position: absolute;
+	top:90%;
+	transform:translate(-50%,-50%);
+	z-index: 200;
+
+}
+.circle {
+	width:100px;
+	height: 100px;
+	left:50%;
+	position: absolute;
+	top:48%;
+	transform:translate(-50%,-50%);
+	z-index: -5;
+	border-radius: 50%;
+	border: 0px solid #ff5b42;
+	background: #ff5b42;
+	animation: delay 1s forwards;
+	animation-delay: 2s;
+	opacity: 0;
+}
+@keyframes delay {
+	0% {top:500px; opacity: 0;}
+	100% {top: 250px; opacity: 1;}
+}
+.mask {
+	width:100%;
+	height:100px;
+	bottom: 0%;
+	position: absolute;
+	z-index: 175;
+	background: #2c3137;
+}
+.circle:hover {
+	border:1000px solid #ff5b42;
+	background: #2c3137;
+	transition:1s;
+}
+.top1 {
+	width: 180px;
+	height: 252px;
+	position: absolute;
+	right:0%;
+	top:75%;
+	transform:translate(0%,-50%);
+	animation: rise1 1s forwards;
+	opacity: 0;
+	z-index: 100;
+	transform-origin: right;
+}
+
+@keyframes rise1 {
+	0% {top:120%; opacity: 0;}
+	40% {top: 73%; opacity: 1;}
+	60% {top: 76%; opacity: 1;}
+	70% {top: 74%; opacity: 1;}
+	100% {top:75%; opacity: 1;}
+}
+.top2 {
+	width:309px;
+	height: 280px;
+	position: absolute;
+	top:70%;
+	left:63%;
+	transform:translate(-50%,-50%);
+	animation: rise2 1s forwards;
+	opacity: 0;
+	animation-delay: .25s;
+	z-index: 50;
+}
+@keyframes rise2 {
+
+	0% {top:120%; opacity: 0;}
+	40% {top: 68%; opacity: 1;}
+	60% {top: 71%; opacity: 1;}
+	70% {top: 69%; opacity: 1;}
+	100% {top:70%; opacity: 1;}
+}
+.top3 {
+	width:210px;
+	height: 269px;
+	position: absolute;
+	top:77%;
+	left:-5%;
+	transform:translate(0%,-50%);
+	animation: risethree 1s forwards;
+	animation-delay: .5s;
+	opacity: 0;
+	z-index: 25;
+}
+@keyframes risethree {
+
+	0% {top:120%; opacity: 0;}
+	40% {top: 75%; opacity: 1;}
+	60% {top: 78%; opacity: 1;}
+	70% {top: 76%; opacity: 1;}
+	100% {top:77%; opacity: 1;}
+}
+.back {
+	width:387px;
+	height:auto;
+	position: absolute;
+	left:0;
+	transform:translate(0%,-50%);
+	top:63%;
+	z-index: -1;
+	animation: back 1s forwards;
+	animation-delay: .75s;
+	opacity: 0;
+}
+@keyframes back {
+	0% {top:120%; opacity: 0;}
+	40% {top: 62%; opacity: 1;}
+	60% {top: 64%; opacity: 1;}
+	70% {top: 62%; opacity: 1;}
+	100% {top:63%; opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
